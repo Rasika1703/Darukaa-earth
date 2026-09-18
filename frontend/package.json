@@ -1,0 +1,49 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-gl-draw": "^1.5.2",
+    "@tailwindcss/vite": "^4.3.3",
+    "axios": "^1.20.0",
+    "chart.js": "^4.5.1",
+    "mapbox-gl": "^3.31.0",
+    "react": "^19.2.8",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^19.2.8",
+    "react-router-dom": "^7.18.4",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "@types/mapbox__mapbox-gl-draw": "^1.4.9",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.10.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.5.1",
+    "oxlint": "^1.81.0",
+    "prettier": "^3.9.8",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+  ,
+"lint-staged": {
+  "*.{ts,tsx}": [
+    "eslint --fix",
+    "prettier --write"
+  ],
+  "*.{js,jsx,json,css,md}": [
+    "prettier --write"
+  ]
+}
+}
