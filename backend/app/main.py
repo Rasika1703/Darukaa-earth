@@ -1,3 +1,4 @@
+from app.api.intelligence import router as intelligence_router
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -32,6 +33,7 @@ app.add_middleware(
 app.include_router(auth.router)
 app.include_router(projects.router)
 app.include_router(sites.router)
+app.include_router(intelligence_router)
 
 
 @app.get("/")

@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "soil organic carbon",
+    "keywords": ["organic carbon", "soil carbon", "SOC"],
+    "relationships": ["soil moisture", "soil structure", "biodiversity"],
+    "action": "Introduce appropriate cover crops or diversified vegetation.",
+    "reason": "Additional plant biomass can increase organic inputs to soil and support soil structure and water retention.",
+    "metrics": ["soil organic carbon", "soil moisture", "habitat diversity"],
+    "time_horizon": "medium term",
+    "source": "FAO",
+    "source_url": "https://www.fao.org/soils-portal/soil-management/soil-organic-matter/en/"
+  },
+  {
+    "topic": "crop diversification",
+    "keywords": ["monoculture", "wheat", "single crop", "intercropping"],
+    "relationships": ["habitat diversity", "species richness", "soil health"],
+    "action": "Replace continuous monoculture with an appropriate diversified cropping system.",
+    "reason": "Increasing vegetation diversity can provide additional habitat and biological resources while diversifying organic inputs to the soil.",
+    "metrics": ["habitat diversity", "species richness", "soil organic carbon"],
+    "time_horizon": "medium to long term",
+    "source": "FAO",
+    "source_url": "https://www.fao.org/agroecology/overview/en/"
+  },
+  {
+    "topic": "low rainfall",
+    "keywords": ["low rainfall", "dry", "semi-arid", "water stress"],
+    "relationships": ["soil moisture", "plant survival", "biodiversity"],
+    "action": "Prioritize drought-adapted vegetation and practices that improve soil water retention.",
+    "reason": "Limited water availability constrains plant establishment and can reduce habitat resources available to organisms.",
+    "metrics": ["soil moisture", "plant survival", "habitat diversity"],
+    "time_horizon": "short to medium term",
+    "source": "FAO",
+    "source_url": "https://www.fao.org/land-water/water/water-efficiency/en/"
+  },
+  {
+    "topic": "agroforestry",
+    "keywords": ["agroforestry", "trees", "tree crops", "farm trees"],
+    "relationships": ["soil carbon", "microclimate", "habitat diversity", "biodiversity"],
+    "action": "Evaluate locally appropriate agroforestry where water availability and land use permit.",
+    "reason": "Integrating woody vegetation can increase structural habitat diversity and provide additional organic inputs and microclimate variation.",
+    "metrics": ["soil organic carbon", "habitat diversity", "species richness"],
+    "time_horizon": "long term",
+    "source": "FAO",
+    "source_url": "https://www.fao.org/agroforestry/en/"
+  },
+  {
+    "topic": "habitat diversity",
+    "keywords": ["species richness", "habitat", "biodiversity decline", "species decline"],
+    "relationships": ["land use", "vegetation diversity", "ecosystem resilience"],
+    "action": "Increase habitat heterogeneity using locally suitable vegetation patches, field margins, or diversified cropping.",
+    "reason": "Greater habitat heterogeneity can provide a wider range of resources and niches for organisms.",
+    "metrics": ["habitat diversity", "species richness", "ecosystem resilience"],
+    "time_horizon": "medium to long term",
+    "source": "IPBES",
+    "source_url": "https://www.ipbes.net/"
+  },
+  {
+    "topic": "deforestation",
+    "keywords": ["deforestation", "forest loss", "tree loss", "habitat fragmentation"],
+    "relationships": ["habitat fragmentation", "species richness", "ecosystem function"],
+    "action": "Protect remaining habitat and restore ecological connections where feasible.",
+    "reason": "Loss and fragmentation of habitat can reduce available resources and connectivity for species.",
+    "metrics": ["habitat connectivity", "species richness", "habitat diversity"],
+    "time_horizon": "long term",
+    "source": "IPBES",
+    "source_url": "https://www.ipbes.net/"
+  },
+  {
+    "topic": "pollution",
+    "keywords": ["pollution", "pesticide", "chemical", "contamination"],
+    "relationships": ["soil organisms", "water quality", "biodiversity"],
+    "action": "Identify and reduce unnecessary pollution pressure while monitoring soil and water conditions.",
+    "reason": "Pollutants can affect organisms directly and alter soil or water conditions that support ecological communities.",
+    "metrics": ["pollution pressure", "soil health", "biodiversity"],
+    "time_horizon": "short to medium term",
+    "source": "UNEP",
+    "source_url": "https://www.unep.org/"
+  }
+]

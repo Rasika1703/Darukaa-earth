@@ -1,6 +1,7 @@
 import { useEffect, useState, type FormEvent } from "react";
 import MapView from "./Components/MapView";
 import AnalyticsPanel from "./Components/AnalyticsPanel";
+import IntelligencePanel from "./Components/IntelligencePanel";
 
 type Project = {
   id: number;
@@ -21,10 +22,15 @@ type Site = {
   geometry: GeoJSON.Geometry;
 };
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://darukaa-earth-cg4k.onrender.com";
 
-type Page = "overview" | "projects" | "sites" | "analytics";
 
+type Page =
+  | "overview"
+  | "projects"
+  | "sites"
+  | "analytics"
+  | "intelligence";
 function App() {
   const [activePage, setActivePage] = useState<Page>("overview");
 
@@ -336,6 +342,19 @@ function App() {
             <span>◈</span>
             Overview
           </button>
+          <button
+  className={`nav-item ${
+    activePage === "intelligence"
+      ? "active"
+      : ""
+  }`}
+  onClick={() =>
+    setActivePage("intelligence")
+  }
+>
+  <span>✦</span>
+  TerraNexus
+</button>
 
           <button
             className={`nav-item ${
@@ -548,7 +567,12 @@ function App() {
             )}
           </section>
         )}
-
+{/* TERRANEXUS INTELLIGENCE PAGE */}
+{activePage === "intelligence" && (
+  <section className="panel page-panel">
+    <IntelligencePanel />
+  </section>
+)}
         {/* OVERVIEW PAGE */}
         {activePage === "overview" && (
           <>
