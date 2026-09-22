@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://darukaa-earth-cg4k.onrender.com";
 
 type IntelligenceResponse = {
   product: string;
